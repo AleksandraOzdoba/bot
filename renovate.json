@@ -1,13 +1,3 @@
 {
-  "labels": ["dependencies"],
-  "packageRules": [
-    {
-      "matchPackageNames": ["/eslint/"],
-      "labels": ["linting"]
-    },
-    {
-      "matchDepTypes": ["optionalDependencies"],
-      "addLabels": ["optional"]
-    }
-  ]
+  "extends": ["@whtsky", "@whtsky:autoMergeLockFileMaintaince"]
 }
