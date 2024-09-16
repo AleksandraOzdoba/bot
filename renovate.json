@@ -1,4 +1,10 @@
 {
   "extends": ["config:base"],
-  "schedule": ["daily"]
+  "schedule": ["weekly on Monday at midnight"],
+  "packageRules": [
+    {
+      "packagePatterns": ["*"],
+      "enabled": true
+    }
+  ]
 }
