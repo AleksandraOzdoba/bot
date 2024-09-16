@@ -1,10 +1,13 @@
 {
-  "extends": ["config:base"],
-  "schedule": ["weekly on Monday at midnight"],
+  "labels": ["dependencies"],
   "packageRules": [
     {
-      "packagePatterns": ["*"],
-      "enabled": true
+      "matchPackageNames": ["/eslint/"],
+      "labels": ["linting"]
+    },
+    {
+      "matchDepTypes": ["optionalDependencies"],
+      "addLabels": ["optional"]
     }
   ]
 }
